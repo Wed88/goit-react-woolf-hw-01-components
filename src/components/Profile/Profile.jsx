@@ -2,30 +2,30 @@ import { Card, Username, Tag, Location, BoardStats, StatList, StatTitle, StatDes
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <Card class="profile">
-      <div class="description">
+    <Card>
+      <div>
         <img
           src={avatar}
           alt="User avatar"
           width="250"
         />
-        <Username class="name">{username}</Username>
-        <Tag class="tag">{ tag}</Tag>
-        <Location class="location">{location}</Location>
+        <Username>{username}</Username>
+        <Tag>{ tag}</Tag>
+        <Location>{location}</Location>
       </div>
 
-      <BoardStats class="stats">
+      <BoardStats>
         <StatList>
-          <StatTitle class="label">Followers</StatTitle>
-          <StatDesk class="quantity">{stats.followers}</StatDesk>
+          <StatTitle>Followers</StatTitle>
+          <StatDesk>{stats.followers}</StatDesk>
         </StatList>
         <StatList>
-          <StatTitle class="label">Views</StatTitle>
-          <StatDesk class="quantity">{stats.views}</StatDesk>
+          <StatTitle>Views</StatTitle>
+          <StatDesk>{stats.views}</StatDesk>
         </StatList>
         <StatList>
-          <StatTitle class="label">Likes</StatTitle>
-          <StatDesk class="quantity">{stats.likes}</StatDesk>
+          <StatTitle>Likes</StatTitle>
+          <StatDesk>{stats.likes}</StatDesk>
         </StatList>
       </BoardStats>
     </Card>
